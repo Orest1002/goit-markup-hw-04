@@ -147,12 +147,14 @@ text-transform: uppercase;
     background: #2E2F42;
     padding-top: 192px;
     padding-bottom: 192px;
-
+    background-image: url(../img/people-office.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   
 }
 .page-hero{
-    background-image: url(../img/people-office.jpg);
-    background-size: cover;
+   
     background-origin: padding-box;
     
 }
@@ -285,9 +287,13 @@ text-align: center;}
 }
 .list{
     display:flex;
-    padding-left: 0px;
-    
-}
+    padding-left: 0px;}
+    .social-list-link:hover,
+    .social-list-link:focus
+    {
+        background-color: red;
+    }
+
 
 /* -----footer----- */
 .page-footer{
