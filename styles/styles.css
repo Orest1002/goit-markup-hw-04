@@ -148,7 +148,7 @@ text-transform: uppercase;
     padding-top: 192px;
     padding-bottom: 192px;
     background-color: #2E2F42;
-    background-image: url(../img/people-office.jpg);
+    background-image: linear-gradient(rgb(255, 0, 0),rgb(255, 0, 0)) url(../img/people-office.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -224,7 +224,7 @@ background-color: #F4F4FD;
     background-image: url(../img/clock.png);
 }
 .icon-diagram::before{
-    background-image: url(../img/diagram.png);
+    background-image:  url(../img/diagram.png);
 }
 .icon-astronaut::before{
     background-image: url(../img/astronaut.png);
