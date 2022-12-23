@@ -148,7 +148,7 @@ text-transform: uppercase;
     padding-top: 192px;
     padding-bottom: 192px;
     background-color: #2E2F42;
-    background-image: linear-gradient(rgb(255, 0, 0),rgb(255, 0, 0)) url(../img/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../img/people-office.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -344,15 +344,14 @@ margin-bottom: 8px;}
             padding-top: 24px; 
             color:#8E8F99 ;
             border: 1px solid #8E8F99;
-border-radius: 4px;
-                     }
+border-radius: 4px; }
         
-                     .icon-item-customer{
+ .icon-item-customer{
 fill: currentColor;
                      }
 
-           .customer-list-link:hover,
-           .customer-list-link:focus{
+  .customer-list-link:hover,
+  .customer-list-link:focus{
         color: #404BBF;
         border-color:#404BBF ;
        }
@@ -366,7 +365,7 @@ fill: currentColor;
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 0px;
-    display: flex;
+    
    
             
 }
@@ -374,28 +373,35 @@ fill: currentColor;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-        margin-top: 16px; 
-        padding-bottom: 24px;
+     padding-bottom: 24px;
+     padding-top: 24px;
     text-align: center;
                 
+}
+.text-footer{
+    display: flex;
 }
 .page-footer-text{
 font-size: 16px;
 line-height: 1.5;
-letter-spacing: 0.02em;
 width:264px;
-margin-top: 16px;
 
 
 color:var(--accent-text-color);}
 
 .social-list-footer{
           width: 300px;
-          color: var(--light-text-color)
-        
-         
+          color: var(--light-text-color);
+          margin-left: 120px; 
+          
 }
-
+.social-footer{
+   background-color:#434455;
+}
+.social-footer:hover,
+.social-footer:focus{
+    background-color: #31D0AA;
+}
 /* page portfolio */
 .portfoolio-cection{
     padding-top: 108px; 
