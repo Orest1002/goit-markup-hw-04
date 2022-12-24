@@ -29,6 +29,8 @@ button{
 .cection{
     padding-top: 120px;
     padding-bottom: 120px;
+    max-width: 1440px;
+    margin: 0,auto;
 }
 /* header */
 body
@@ -43,7 +45,9 @@ body
    
   
 }
-
+.page-header{
+    display: block;
+}
 .page-header-container{
     display: flex;
     align-items: center;
@@ -316,16 +320,29 @@ margin-bottom: 8px;}
         justify-content: center;
         gap:24px;
     }
+
     .social-list-link{
         display: flex;
         justify-content: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
+        align-items: center;
+            border-radius: 50%;
         background-color: #4D5AE5;
-           }
+      
+        width:100%; 
+        height:100%;
+    }
+    .social-list-link:hover,
+    .social-list-link:focus{
+        background-color: #404BBF;
+    }
+    .social-list-item{
+        width:40px; 
+        height:40px; 
+    }
          .social-list-icon{
             fill: #FFFFFF;
+            
+    
          }   
          .customer{
             padding-top: 125px;
@@ -336,12 +353,17 @@ margin-bottom: 8px;}
             justify-content: center;
          
         }
+        .icon-item{
+            width:168px ;
+            height:88px ;
+        }
+        
          .customer-list-link{
             display: flex;
             justify-content: center;
-            width: 168px;
-            height: 88px;
-            padding-top: 24px; 
+            align-items: center;
+                        width: 100%;
+                        height: 100%;
             color:#8E8F99 ;
             border: 1px solid #8E8F99;
 border-radius: 4px; }
@@ -355,8 +377,10 @@ fill: currentColor;
         color: #404BBF;
         border-color:#404BBF ;
        }
-                
-       
+        .customer-section{
+            padding: top 130px; ;
+            padding-bottom:120px ;
+        }
 
 
 /* -----footer----- */
@@ -365,17 +389,29 @@ fill: currentColor;
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 0px;
-    
-   
-            
+              
 }
+.logo-footer-blok{
+
+    margin-right: 77px;
+    padding-bottom: 24px;
+  
+  line-height: 1.5;
+  display: flex;
+  letter-spacing: 0.03em;
+  
+}
+
+
+
+
+
 .footer-text-tiam{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-     padding-bottom: 24px;
-     padding-top: 24px;
-    text-align: center;
+     margin-bottom: 16px;
+    
                 
 }
 .text-footer{
@@ -385,24 +421,47 @@ fill: currentColor;
 font-size: 16px;
 line-height: 1.5;
 width:264px;
+color: var(--accent-text-color);}
 
 
-color:var(--accent-text-color);}
-
+.social-foot{
+    display: flex;
+    justify-content: center;
+    gap:16px;
+}
 .social-list-footer{
-          width: 300px;
+          width: 210px;
           color: var(--light-text-color);
           margin-left: 120px; 
-          
+                    
 }
+
 .social-footer{
-   background-color:#434455;
+   display: flex;
+   justify-content: center;
+   gap:16px;
+   background-color: #434455;
+
 }
+
+
 .social-footer:hover,
 .social-footer:focus{
     background-color: #31D0AA;
 }
 /* page portfolio */
+
+.page-header::after {
+   
+        content:"";
+        display:block;
+        width:100% ;
+        border-bottom: 1px solid #E7E9FC;
+           box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);   
+             background-image: linear-gradient( rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08));
+    }
+
+
 .portfoolio-cection{
     padding-top: 108px; 
        padding-bottom: 120px;
@@ -483,17 +542,26 @@ color: var(--primari-text-color);
             }
             
 .portfolio-list{
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 column-gap: 24px;
 row-gap: 48px;
 padding-left: 0px;
+
 }
-        
- .card:hover,
- .card:focus{
+.list-card{
+    display: block;
+    
+}
+
+
+
+ .list-card:hover,
+ .list-card:focus{
                 color: #FFFFFF;
                  
-                cursor: pointer;
+              cursor: pointer;
+              background-color: #4D5AE5;
+               
         }
 .card-text{
 padding-top: 32px;
@@ -504,3 +572,14 @@ border: 0.5px solid #F4F4FD;
  .footer-portfolio{
             background: #2E2F42;}
             
+            .logo-footer{
+                font-family: 'Raleway',sans-serif;
+                 font-weight: 800;
+                font-size: 18px;
+                line-height: 1.17;      
+                letter-spacing: 0.03em;
+                text-transform: uppercase;            
+                color: var(--light-text-color)
+                 
+                
+            }
