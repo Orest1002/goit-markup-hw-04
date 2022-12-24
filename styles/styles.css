@@ -465,6 +465,11 @@ color: var(--accent-text-color);}
 .portfoolio-cection{
     padding-top: 108px; 
        padding-bottom: 120px;
+      
+    }
+    .cection-conteiner{
+        padding-left: 0;
+        padding-right: 0;
     }
 .list-btn{
     font-family: inherit;
@@ -542,32 +547,36 @@ color: var(--primari-text-color);
             }
             
 .portfolio-list{
+    display: flex;
     flex-wrap:wrap;
-column-gap: 24px;
+column-gap: 20px;
 row-gap: 48px;
 padding-left: 0px;
 
+
+
 }
-.list-card{
+
+  .list-card{
     display: block;
-    
+    text-decoration: none;
+  } 
+
+.card{
+border: 1px solid #E7E9FC;
 }
 
 
 
  .list-card:hover,
- .list-card:focus{
-                color: #FFFFFF;
-                 
-              cursor: pointer;
-              background-color: #4D5AE5;
-               
+ .list-card:focus{                
+cursor: pointer;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         }
 .card-text{
 padding-top: 32px;
 padding-bottom: 32px;
 padding-left: 16px;
-border: 0.5px solid #F4F4FD;
         }
  .footer-portfolio{
             background: #2E2F42;}
